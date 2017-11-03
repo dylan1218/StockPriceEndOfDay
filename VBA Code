@@ -15,7 +15,7 @@ Public Function StockPriceClosing(DateOfClose As String, Ticker As String) As Va
 'The below represent constant values that should not change, but are variables in order to explain their nature
     InitializeBeginPos = 5
     InitializeEndofStringPos = 8
-    ApiKey = "NysKCsdEcqZ8sFDb3nDN" 'Enter your API Key here. Must be obtained (For free) from Quandl.com
+    ApiKey = "" 'Enter your API Key here. Must be obtained (For free) from Quandl.com
 
 'If statement that checks if date entered is a weekend, and breaks function if so. Else, converts the date into the API designated form
     If Weekday(DateOfClose, 1) = 1 Or Weekday(DateOfClose, 1) = 7 Then
